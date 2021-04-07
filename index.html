@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>password generator</title>    
+    <title>password generator</title>
 </head>
+
 <body>
-    <script
-    <!-- dichiaro le variabili -->
-        var nome = 
-    <!-- chiedo dati all'utente  -->
 
-    <!-- innesto i dati nell'html -->
+    <!-- input dell'utente
+    <input id="nomeUtente" type="text" name="nome" placeholder="nome"><br>
+    <input id="cognomeUtente" type="text" name="cognome" placeholder="cognome"><br>
+    <input id="colorePref" type="text" name="co" placeholder="colore preferito"> -->
 
-    <!-- Output su console -->
-    console.log(nome)
+    <h1 id="h1custom">inserire i dati</h1>
+
+
+    <script>
+        // creazione e inizializzazione delle variabili 
+        var nome = prompt("inserire il nome");
+        var cognome = prompt("inserire il cognome");
+        var colorePref = prompt("inserire il proprio colore preferito");
+
+        //inniezione dell' HTML 
+        document.getElementById("h1custom").innerHTML = "La tua password è:" + nome + cognome + colorePref + 21;
+
+        // output su console 
+        console.log(noem,cognome,colorePref);
+
+
     </script>
-</body>
-</html>
+
+
+</body >
+</html >
